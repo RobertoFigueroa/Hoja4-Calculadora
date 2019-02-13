@@ -1,4 +1,6 @@
-public interface Stack<E> 
+package Utilities;
+
+public interface Stack<E>
 {
 
    public void push(E item);
