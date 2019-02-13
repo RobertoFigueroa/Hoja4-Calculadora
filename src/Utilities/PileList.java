@@ -10,5 +10,16 @@
 
 package Utilities;
 
+import java.util.List;
+
 public class PileList<E> extends AbstractPile<E> {
+
+    protected List<E> data;
+
+    public PileList(){
+        //generate a new List for save the numbers
+        data = new List<E>();
+
+    }
+
 }
