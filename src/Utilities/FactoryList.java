@@ -1,10 +1,18 @@
 package Utilities;
 
-public class FactoryList<E> {
+import java.util.AbstractList;
 
-    public Stack<E> buildList(int option){
-        if(option==1){
-            return new
+public abstract class FactoryList<E> implements  List<E>{
+
+    public PileList<E> buildList(int type){
+        if(type == 1){
+            return new SimplyChainedList<>();
+        }
+        else if(type == 2){
+            return  new DoubleChainedList<>();
+        }
+        else{
+            return new CircularList<>();
         }
     }
 }

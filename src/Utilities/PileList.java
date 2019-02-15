@@ -1,10 +1,8 @@
-/*
- * Esta clase hereda los metodos de la Interfaz Stack y de la clase AbstractPile los cuales son definidos por lo que
- * se vuelve una clase concreta
- *
- * */
+
 /**
  * @author Roberto Figueroa, Steven Chan
+ * Esta clase hereda los metodos de la Interfaz Stack y de la clase AbstractPile los cuales son definidos por lo que
+ *  * se vuelve una clase concreta
  * */
 
 
@@ -12,7 +10,7 @@ package Utilities;
 
 import java.util.List;
 
-public class PileList<E> extends AbstractPile<E> {
+public abstract class PileList<E> implements List<E> {
 
     protected List<E> data;
 
