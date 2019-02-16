@@ -8,16 +8,21 @@
 
 package Utilities;
 
-import java.util.List;
 
-public abstract class PileList<E> implements List<E> {
+public abstract class PileList<E> implements MyList<E> {
 
-    protected List<E> data;
-
-    public PileList(int option){
-        //generate a new List for save the numbers
-        data = listFactory(option);
-
+    public boolean isEmpty()
+    // post: returns true iff list has no elements
+    {
+        return size() == 0;
     }
+
+    public boolean contains(E value)
+    // pre: value is not null
+    // post: returns true iff list contains an object equal to value
+    {
+        return -1 != indexOf(value);
+    }
+
 
 }

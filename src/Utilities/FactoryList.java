@@ -2,7 +2,7 @@ package Utilities;
 
 import java.util.AbstractList;
 
-public abstract class FactoryList<E> implements  List<E>{
+public  class FactoryList<E> {
 
     public PileList<E> buildList(int type){
         if(type == 1){
