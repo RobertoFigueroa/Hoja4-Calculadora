@@ -1,10 +1,5 @@
 package Factories;
 
-import List.CircularList;
-import List.DoublyLinkedList;
-import Stack.PileList;
-import List.SinglyLinkedList;
-
 public  class FactoryList<E> {
 
     public PileList<E> buildList(int type){
