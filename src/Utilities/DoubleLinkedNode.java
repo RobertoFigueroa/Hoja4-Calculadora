@@ -1,13 +1,13 @@
 package Utilities;
 
-class DoublyLinkedNode<E> {
+public class DoubleLinkedNode<E> {
     protected E data;
-    protected DoublyLinkedNode<E> nextElement;
-    protected DoublyLinkedNode<E> previousElement;
+    protected DoubleLinkedNode<E> nextElement;
+    protected DoubleLinkedNode<E> previousElement;
 
-    public DoublyLinkedNode(E v,
-                            DoublyLinkedNode<E> next,
-                            DoublyLinkedNode<E> previous) {
+    public DoubleLinkedNode(E v,
+                            DoubleLinkedNode<E> next,
+                            DoubleLinkedNode<E> previous) {
         data = v;
         nextElement = next;
         if (nextElement != null)
@@ -17,9 +17,22 @@ class DoublyLinkedNode<E> {
             previousElement.nextElement = this;
     }
 
-    public DoublyLinkedNode(E v)
+    public DoubleLinkedNode(E v)
 // post: constructs a single element
     {
         this(v, null, null);
     }
+
+    public DoubleLinkedNode<E> previous() {
+        return previousElement;
+    }
+
+    public void setNext() {
+        nextElement = null;
+    }
+
+    public E value() {
+        return this.data;
+    }
+
 }

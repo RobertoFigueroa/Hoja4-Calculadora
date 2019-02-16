@@ -1,6 +1,8 @@
 package Utilities;
 
-public class CircularList <E> extends AbstractList<E>
+import List.Node;
+
+public class CircularList <E> extends AbstractList<E>{
 
         protected Node<E> tail;
         protected int count;
@@ -10,6 +12,16 @@ public class CircularList <E> extends AbstractList<E>
         {
             tail = null;
             count = 0;
+        }
+
+        @Override
+        public int size() {
+            return 0;
+        }
+
+        @Override
+        public void clear() {
+
         }
 
         public void addFirst(E value)
@@ -37,6 +49,21 @@ public class CircularList <E> extends AbstractList<E>
             tail = tail.next();
         }
 
+        @Override
+        public E getFirst() {
+            return null;
+        }
+
+        @Override
+        public E getLast() {
+            return null;
+        }
+
+        @Override
+        public E removeFirst() {
+            return null;
+        }
+
 
 // lo dificil es quitar el elemento de la cola
 
@@ -60,4 +87,56 @@ public class CircularList <E> extends AbstractList<E>
             count--;
             return temp.value();
         }
+
+        @Override
+        public E remove(E value) {
+            return null;
+        }
+
+        @Override
+        public void add(E value) {
+
+        }
+
+        @Override
+        public E remove() {
+            return null;
+        }
+
+        @Override
+        public E get() {
+            return null;
+        }
+
+        @Override
+        public int indexOf(E value) {
+            return 0;
+        }
+
+        @Override
+        public int lastIndexOf(E value) {
+            return 0;
+        }
+
+        @Override
+        public E get(int i) {
+            return null;
+        }
+
+        @Override
+        public E set(int i, E o) {
+            return null;
+        }
+
+        @Override
+        public void add(int i, E o) {
+
+        }
+
+        @Override
+        public E remove(int i) {
+            return null;
+        }
+
 }
+
