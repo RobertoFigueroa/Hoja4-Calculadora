@@ -1,8 +1,8 @@
 package Factories;
 
 import Interface.Stack;
-import PileArrayList;
-import PileVector;
+import Stack.PileArrayList;
+import Stack.PileVector;
 
 public class FactoryPile<E> {
 

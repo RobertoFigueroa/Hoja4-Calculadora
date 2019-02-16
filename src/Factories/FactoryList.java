@@ -1,16 +1,19 @@
 package Factories;
 
+import List.AbstractList;
+import List.SinglyLinkedList;
+
 public  class FactoryList<E> {
 
-    public PileList<E> buildList(int type){
+    public AbstractList<E> buildList(int type){
         if(type == 1){
-            return new SinglyLinkedList<>();
+            return new SinglyLinkedList<E>();
         }
         else if(type == 2){
-            return  new DoublyLinkedList<>();
+            return  new DoublyLinkedList<E>();
         }
         else{
-            return new CircularList<>();
+            return new CircularList<E>();
         }
     }
 }
