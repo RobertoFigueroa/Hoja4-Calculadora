@@ -1,12 +1,12 @@
 package Utilities;
 
-public class SimplyChainedList<E> extends PileList<E>{
+public class SinglyLinkedList<E> extends PileList<E>{
 
 
     protected int count; // list size
     protected Node<E> head; // ref. to first element
 
-    public SimplyChainedList()
+    public SinglyLinkedList()
     // post: generates an empty list
     {
 
@@ -87,7 +87,7 @@ public class SimplyChainedList<E> extends PileList<E>{
     @Override
     public E getLast() {
         Node<E> finger =  head;
-        while(finger != null){
+        while(finger.next() != null){
             finger = finger.next();
         }
         return finger.value();
