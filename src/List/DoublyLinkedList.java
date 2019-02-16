@@ -1,6 +1,8 @@
-package Utilities;
+package List;
 
-public class DoublyLinkedList<E> extends PileList<E>{
+import Stack.PileList;
+
+public class DoublyLinkedList<E> extends PileList<E> {
     protected int count;
     protected DoublyLinkedNode<E> head;
     protected DoublyLinkedNode<E> tail;

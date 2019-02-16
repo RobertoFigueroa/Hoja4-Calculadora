@@ -6,8 +6,10 @@
  * */
 
 
-package Utilities;
+package Stack;
 
+
+import Interface.MyList;
 
 public abstract class PileList<E> implements MyList<E> {
 
@@ -17,12 +19,7 @@ public abstract class PileList<E> implements MyList<E> {
         return size() == 0;
     }
 
-    public boolean contains(E value)
-    // pre: value is not null
-    // post: returns true iff list contains an object equal to value
-    {
-        return -1 != indexOf(value);
-    }
+
 
 
 }

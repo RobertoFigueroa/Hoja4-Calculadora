@@ -1,6 +1,8 @@
-package Utilities;
+package List;
 
-public  class SinglyLinkedList<E> extends PileList<E>{
+import Stack.PileList;
+
+public  class SinglyLinkedList<E> extends PileList<E> {
 
 
     protected int count; // list size

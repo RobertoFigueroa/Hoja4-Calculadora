@@ -1,4 +1,4 @@
-package Utilities;
+package List;
 
 class Node<E>
 {

@@ -1,8 +1,8 @@
-package Utilities;
+package Interface;
 
 import java.util.Iterator;
 
-interface MyList<E>{
+public interface MyList<E>{
 
     public int size();
     // post: returns number of elements in list

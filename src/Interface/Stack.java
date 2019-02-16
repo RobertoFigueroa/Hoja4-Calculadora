@@ -1,4 +1,4 @@
-package Utilities;
+package Interface;
 
 public interface Stack<E>
 {

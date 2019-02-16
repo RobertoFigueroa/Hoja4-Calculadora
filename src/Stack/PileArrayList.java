@@ -7,7 +7,9 @@
  * @author Roberto Figueroa, Steven Chan
  * */
 
-package Utilities;
+package Stack;
+
+import Stack.AbstractPile;
 
 import java.util.ArrayList;
 

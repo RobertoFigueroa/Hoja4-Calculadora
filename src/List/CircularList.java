@@ -1,6 +1,8 @@
-package Utilities;
+package List;
 
-public class CircularList<E> extends PileList<E>{
+import Stack.PileList;
+
+public class CircularList<E> extends PileList<E> {
 
 protected Node<E> tail;
 protected int count;

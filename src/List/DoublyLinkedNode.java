@@ -1,4 +1,4 @@
-package Utilities;
+package List;
 
 public class DoublyLinkedNode<E> {
     protected E data;
