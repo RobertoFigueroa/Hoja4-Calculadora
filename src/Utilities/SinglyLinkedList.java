@@ -1,6 +1,6 @@
 package Utilities;
 
-public class SinglyLinkedList<E> extends PileList<E>{
+public  class SinglyLinkedList<E> extends PileList<E>{
 
 
     protected int count; // list size
@@ -96,9 +96,32 @@ public class SinglyLinkedList<E> extends PileList<E>{
     @Override
     public E removeLast() {
         Node<E> finger = head;
-        Node<E> finger2 = head;
-        while (finger == null){
 
+        while (finger.next() != null){
+            finger = finger.next();
         }
+        E value = finger.value();
+        finger = null;
+        count--;
+        return value;
+
+    }
+
+    @Override
+    public E remove(E value)
+    {
+        Node<E> finger = head;
+
+        while (finger != null &&
+                !finger.value().equals(value))
+        {
+            finger = finger.next();
+        }
+        return finger.value();
+    }
+
+    @Override
+    public void add(E value) {
+        // TODO: 15/02/2019  
     }
 }
