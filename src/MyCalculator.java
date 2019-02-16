@@ -8,6 +8,16 @@ import Interface.Calculator;
  * */
 public class MyCalculator implements Calculator {
 
+    private static final MyCalculator Single_Instance = new MyCalculator();
+
+    private MyCalculator getInstance(){
+        return Single_Instance;
+    }
+
+    MyCalculator(){
+    }
+
+
     /**
      * Calcula para dos numeros cualquier operación aritméitca simple definida por un signo de operación
      * @param num1 Primer numero entero
@@ -30,4 +40,6 @@ public class MyCalculator implements Calculator {
             return num2/num1;
         }
     }
+
+
 }
