@@ -1,3 +1,8 @@
+
+
+//Roberto Figueroa , Steven Chan
+//Obtenido de: JavaStructures, data structures for the principled programmer. Bailey, Duane
+
 package Interface;
 
 public interface Stack<E>

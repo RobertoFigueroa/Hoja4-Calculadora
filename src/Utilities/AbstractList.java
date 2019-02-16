@@ -1,3 +1,7 @@
+
+//Roberto Figueroa , Steven Chan
+//Obtenido de: JavaStructures, data structures for the principled programmer. Bailey, Duane
+
 package Utilities;
 
 import Interface.List;
@@ -20,4 +24,6 @@ public abstract class AbstractList<E> implements List<E> {
     {
         return -1 != indexOf(value);
     }
+
+
 }

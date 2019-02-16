@@ -1,5 +1,8 @@
-package List;
 
+//Roberto Figueroa , Steven Chan
+//Obtenido de: JavaStructures, data structures for the principled programmer. Bailey, Duane
+
+package List;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;

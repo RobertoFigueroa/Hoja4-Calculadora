@@ -1,3 +1,7 @@
+
+//Roberto Figueroa , Steven Chan
+//Obtenido de: JavaStructures, data structures for the principled programmer. Bailey, Duane
+
 package Utilities;
 
 public class DoubleLinkedList<E> extends AbstractList<E>{

@@ -1,5 +1,9 @@
-package Utilities;
 
+
+//Roberto Figueroa , Steven Chan
+//Obtenido de: JavaStructures, data structures for the principled programmer. Bailey, Duane
+
+package Utilities;
 import List.Node;
 
 public class CircularList <E> extends AbstractList<E>{
